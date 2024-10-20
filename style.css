@@ -1,0 +1,470 @@
+/* Reset de margenes y paddings */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Estilos generales */
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+h1,
+h2 {
+  color: #333;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+  max-width: 1200px;
+}
+
+/* Navbar */
+.navbar {
+  background-color: black;
+  color: #fff;
+  padding: 15px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+.navbar h1 a {
+  color: #fff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.nav-photo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.navbar ul {
+  list-style: none;
+  float: right;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar ul li {
+  display: inline;
+  margin-left: 20px;
+}
+
+.navbar ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.navbar ul li a:hover {
+  color: #f2668b;
+}
+
+/* Estilos para pantallas pequeñas */
+.menu-toggle {
+  display: none;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .navbar ul {
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  .navbar ul.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+  }
+
+  .navbar ul li {
+    margin: 10px 0;
+  }
+}
+
+/* Hero Section */
+.hero {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px; /* Ajustar padding para móviles */
+  background-image: url(assets/bannerAnalisisyDev.png);
+  background-size: cover;
+  opacity: 0.9;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2; /* Asegurar que el texto esté por encima del overlay */
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+  color: #fff;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+}
+
+.hero p {
+  color: #fff;
+  font-size: 1.2rem;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.7);
+}
+
+.hero h1 span {
+  color: #f788a6;
+}
+
+.resaltadoNegro {
+  display: inline-block;
+  padding: 0px 6px;
+  background-color: black;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn1 {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #f2668b;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #f788a6;
+}
+
+/* Sobre mí */
+.about {
+  padding: 100px 0;
+  text-align: center;
+  box-shadow: 2px 1px 10px 0 rgba(0, 0, 0, 0.2);
+  background-color: var(--bg-color);
+}
+
+.about p {
+  margin-top: 10px;
+  font-size: 1.1rem;
+  width: 80%;
+}
+
+/* Portafolio */
+.portfolio {
+  padding: 100px 0;
+  background-color: #f4f4f4;
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  height: 400px;
+}
+
+.portfolio-item {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.portfolio-item img {
+  border-radius: 10px;
+}
+
+.portfolio-info h3 {
+  margin-top: 15px;
+}
+
+.portfolio-info p {
+  margin-top: 10px;
+}
+
+.github_acceso {
+  text-align: center;
+}
+/* --------- SECTION 3: DESTINOS (pantallas grandes) -------*/
+
+#div_area_destinos {
+  justify-content: space-between;
+}
+.destino {
+  padding-top: 2em;
+  height: 15rem;
+  width: 30%;
+  display: flex;
+}
+
+.nombre_destino > h2 {
+  font-weight: 550;
+  font-size: 3rem;
+}
+#section_tarjetas {
+  padding-left: 7em;
+  text-align: center;
+  width: 80%;
+}
+
+.imagen_tarjeta_destino {
+  padding-left: 2em;
+}
+
+/* Footer */
+.footer {
+  padding: 20px 0;
+  text-align: center;
+  background-color: #fff; /* Color de fondo */
+  color: #333; /* Color del texto */
+}
+
+.footer p {
+  margin: 0;
+}
+
+.social-links {
+  margin-top: 10px;
+}
+
+.social-links a {
+  color: black; /* Color de los iconos */
+  margin: 0 10px; /* Espaciado entre los iconos */
+  font-size: 1.5rem; /* Tamaño de los iconos */
+  transition: color 0.3s; /* Efecto de transición */
+}
+
+.social-links a:hover {
+  color: #f2668b; /* Color de hover */
+}
+
+/* --- MEDIA QUERIES --- */
+
+/* Para pantallas medianas como tablets */
+@media (max-width: 768px) {
+  .navbar ul {
+    display: none; /* O agregar un menú hamburguesa */
+  }
+
+  .hero {
+    width: 600px;
+    height: 600px;
+  }
+
+  .hero h1 {
+    font-size: 3rem; /* Reducir tamaño del título */
+  }
+
+  .hero p {
+    font-size: 1rem; /* Reducir tamaño del párrafo */
+  }
+
+  .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas en tabletas */
+  }
+
+  .portfolio-item {
+    padding: 15px; /* Ajustar padding para mejor visualización en tablets */
+  }
+}
+
+/* Para pantallas pequeñas como móviles */
+@media (max-width: 480px) {
+  * {
+    width: 600px;
+  }
+  .hero {
+    width: 400px;
+    height: 400px;
+    align-items: center;
+    padding-bottom: 1.5em;
+    padding-bottom: -5em;
+    margin-top: -5em;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  .hero::before {
+    width: 400px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+  .hero h1 {
+    font-size: 2.5rem; /* Ajustar tamaño del texto para móviles */
+  }
+
+  .hero p {
+    font-size: 0.9rem; /* Texto más pequeño en párrafos */
+  }
+
+  .portfolio-grid {
+    grid-template-columns: 1fr; /* Una columna en móviles */
+    margin-left: -4em;
+  }
+
+  .navbar ul {
+    display: none; /* Puedes implementar un menú hamburguesa aquí */
+  }
+
+  .navbar h1 a {
+    font-size: 1.2rem; /* Reducir el tamaño del logo/nombre */
+  }
+
+  .nav-photo {
+    width: 30px; /* Imagen más pequeña en móviles */
+    height: 30px;
+  }
+
+  .portfolio-item {
+    padding: 10px; /* Ajustar padding en los items de portafolio */
+  }
+
+  .about {
+    padding: 1px 1px; /* Reducir el padding general */
+    width: 400px;
+    height: 400px;
+    margin-left: -5em;
+    margin-bottom: -9em;
+  }
+  /* ****************************** PAG. DESTINOS (MOBILE) *************************** */
+  /* ----Section 1: imagen principal ---- */
+  #section_destinos_imagen_principal {
+    width: 100%;
+    background-image: url(../img/chicamapalarga.webp);
+    background-size: cover;
+    background-position: right;
+    height: 70vh;
+    box-shadow: inset 0 0 0 2000px rgba(37, 37, 45, 0.5);
+  }
+  /* ----Section 2: texto descripcion ---- */
+  #section_destinos_descripcion {
+    margin: 0 auto;
+    margin-top: 50px;
+    padding-left: 5%;
+    padding-right: 5%;
+    width: 100%;
+    text-align: center;
+  }
+  #titulo_destinos {
+    color: var(--primary-color);
+    font-family: var(--titulo-font);
+    font-size: 4rem;
+    text-align: center;
+    font-weight: normal;
+  }
+  #div_destinos_descripcion_texto {
+    line-height: 1.5rem;
+    color: var(--third-color);
+    font-family: var(--normal-font);
+  }
+  /* ----Section 3: tarjetas destinos ---- */
+  #section_tarjetas {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: var(--fourth-color);
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .tarjeta_destino {
+    width: 70%;
+    -webkit-box-shadow: 2px 1px 10px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 1px 10px 0 rgba(0, 0, 0, 0.2);
+    margin-bottom: 1.5rem;
+    background-color: var(--bg-color);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .imagen_tarjeta_destino {
+    width: 100%;
+  }
+  .imagen_tarjeta_destino img {
+    width: 100%;
+    aspect-ratio: 8/5;
+  }
+  .texto_tarjeta_destino {
+    padding: 10px;
+    width: 100%;
+  }
+  .texto_tarjeta_destino h2 {
+    font-family: var(--titulo-font);
+    font-size: 3.5rem;
+    font-weight: normal;
+  }
+  .texto_tarjeta_destino p {
+    color: var(--secundary-color);
+  }
+  .texto_tarjeta_destino a {
+    color: var(--secundary-color);
+    background-color: var(--fifth-color);
+    border-radius: 5%;
+  }
+  .iframe_destino {
+    /* display:none; */
+    width: 100%;
+    padding: 0;
+  }
+  .iframe_destino iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16/9;
+  }
+  .contact {
+    width: 400px;
+    height: 500px;
+    align-items: center;
+  }
+
+  #contact-form input,
+  #contact-form textarea {
+    max-width: 100%; /* Asegurar que los inputs ocupen todo el ancho */
+  }
+
+  .btn {
+    padding: 8px 16px; /* Botones más pequeños en móviles */
+  }
+}
