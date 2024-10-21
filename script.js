@@ -6,13 +6,13 @@ AOS.init();
 ScrollReveal().reveal(".about", {
   duration: 2000,
   origin: "left",
-  distance: "100px",
+  distance: "30px",
 });
 
 ScrollReveal().reveal(".portfolio-item", {
   duration: 1500,
   origin: "bottom",
-  distance: "50px",
+  distance: "30px",
   interval: 200,
 });
 
