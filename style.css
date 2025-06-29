@@ -264,14 +264,5 @@ footer {
   color: #fff;
   text-decoration: none;
 }
-/* Por defecto mostrar en móvil */
-.menu-toggle {
-  display: block;
-}
 
-/* Ocultar menú hamburguesa en pantallas mayores a 768px */
-@media (min-width: 768px) {
-  .menu-toggle {
-    display: none;
-  }
-}
+
