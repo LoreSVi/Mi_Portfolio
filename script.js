@@ -29,7 +29,7 @@ document.querySelectorAll(".nav-links a").forEach((link) => {
   });
 });
 
-// Inicializa EmailJS
+// Inicializa EmailJS 
 (function () {
   emailjs.init("Tservice_GmailSend"); // Reemplaza con tu ID real
 })();
