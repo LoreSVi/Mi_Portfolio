@@ -26,13 +26,13 @@
       <div class="container">
         <h1>
           <a href="#">
-          Portafolio
+          Portfolio
           </a>
         </h1>
       
         <nav class="nav-links">
           <ul>
-            <li><a href="#about">Sobre mí</a></li>
+           
             <li><a href="#portfolio">Portafolio</a></li>
             <li><a href="#contact">Contacto</a></li>
           </ul>
@@ -64,8 +64,8 @@
   <!-- Portafolio -->
   <section id="portfolio" class="portfolio" data-aos="fade-up">
     <div class="container">
-      <h2>Portafolio</h2>
-     
+      <h2>Proyectos</h2>
+   
       <!-- Section: tarjetas videos -->
       <section id="section_tarjetas">
     
@@ -120,15 +120,25 @@
       </section>
       <hr>
 
-
+   <div class="contenedorDeTarjetas">
       <div id="gridProyectos" class="row">
-        <div class="carousel-inner">
-          <div class="carousel-item active">
+       
        <!-- inicia sistema de grilla de BS -->
        <section class="row">
   
       <!-- card  -->
-      <article class="col-sm-12 col-md-6 col-lg-2 mb-2">
+      <article class="col-sm-12 col-md-6 col-lg-4 mb-2">
+        <div class="card">
+          <img src="assets/Qull_landing.png" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">QullAcademy </h5>
+            <p class="card-text">Landing page peluqueria</p>
+            <a href="https://qull-academy.vercel.app/pages/nosotros.html" target="_blank" class="btn btn-dark">Visitar</a>
+            </div>
+            </div>
+    </article>
+    <!-- card1  -->
+      <article class="col-sm-12 col-md-6 col-lg-4 mb-2">
         <div class="card">
           <img src="assets/tareasAngular.png" class="card-img-top" alt="...">
           <div class="card-body">
@@ -139,7 +149,7 @@
             </div>
     </article>
         <!-- card 2 -->
-        <article class="col-sm-12 col-md-6 col-lg-2 mb-2">
+        <article class="col-sm-12 col-md-6 col-lg-4 mb-2">
           <div class="card">
            <img src="assets/movies.png"  class="card-img-top" alt="..." >
             <div class="card-body">
@@ -151,9 +161,9 @@
       </article>
   
         <!-- card  3 -->
-        <article class="col-sm-12 col-md-6 col-lg-2 mb-2">
+        <article class="col-sm-12 col-md-6 col-lg-4 mb-2">
           <div class="card">
-            <img src="assets/quiz.png" class="card-img-top" alt="...">
+            <img src="assets/Quizz.png" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Quiz JavaScript</h5>
               <p class="card-text">Juego de Preguntas y respuestas</p>
@@ -163,7 +173,7 @@
       </article>
   
         <!-- card  4-->
-        <article class="col-sm-12 col-md-6 col-lg-2 mb-2">
+        <article class="col-sm-12 col-md-6 col-lg-4 mb-2">
           <div class="card">
             <img src="assets/climapp.png" class="card-img-top" alt="...">
             <div class="card-body">
@@ -174,7 +184,7 @@
               </div>
       </article>
         <!-- card 5 -->
-        <article class="col-sm-12 col-md-6 col-lg-2 mb-2">
+        <article class="col-sm-12 col-md-6 col-lg-4 mb-2">
           <div class="card">
             <img src="/assets/calculadora.png" class="card-img-top" alt="...">
             <div class="card-body">
@@ -186,10 +196,9 @@
             </div>
       </article>
     </section>
-          </div>
-        </div>
+      
       </div>
-    
+    </div>
       <section id="contact" class="contact" data-aos="fade-up">
         <div class="container">
           <h2>Contacto</h2>
@@ -197,7 +206,7 @@
             <input type="text" id="name" name="name" placeholder="Tu Nombre" required />
             <input type="email" id="email" name="email" placeholder="Tu Email" required />
             <textarea id="message" name="message" placeholder="Mensaje" required></textarea>
-            <button type="submit" class="btn">Enviar</button>
+             <button type="submit" class="btn">Enviar consulta</button>
           </form>
         </div>
       </section>
@@ -219,6 +228,8 @@
       <script src="https://unpkg.com/scrollreveal"></script>
       <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
       <script src="script.js"></script>
+      <script src="env.js"></script>
+      <script type="module" src="formulario.js"></script>
     </body>
   </html> 
 

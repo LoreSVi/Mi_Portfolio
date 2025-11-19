@@ -33,10 +33,9 @@ body {
 }
 
 .navbar h1 a {
-  color: orange;
+  color: rgb(244, 181, 230);
   text-decoration: none;
 }
-
 
 .nav-links ul {
   list-style: none;
@@ -63,7 +62,7 @@ body {
   height: 150px;
   border-radius: 50%;
   object-fit: cover;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 /* Animación keyframes */
@@ -74,13 +73,12 @@ body {
   }
 }
 
-
-.hero, .about {
-  background: rgb(37, 37, 37);
+.hero,
+.about {
+  background-image: url(./assets/fondoportada.PNG);
   padding: 100px 20px;
-  color:white;
+  color: white;
 }
-
 
 .hero {
   text-align: center;
@@ -88,7 +86,7 @@ body {
 }
 
 .buttons a {
-color:orange;
+  color: orange;
 }
 
 .contact {
@@ -104,20 +102,17 @@ color:orange;
 .about .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding:  1rem;
+  padding: 1rem;
 }
 
 /* Portafolio */
 #portfolio {
-  padding: 3rem 1rem;
-     background: linear-gradient(170deg, rgba(232, 162, 49, 1) 0%, rgba(222, 182, 89, 1) 52%, rgba(237, 221, 83, 1) 100%);
+  padding: 3 2rem 1rem;
 }
 
 #portfolio h2 {
   text-align: center;
-  margin-bottom: 1rem;
 }
-
 
 #section_tarjetas {
   display: flex;
@@ -126,14 +121,15 @@ color:orange;
 }
 
 /* Tarjetas con video + texto */
-.tarjeta_video {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  gap: 2rem;
+@media (min-width: 1200px) {
+  .tarjeta_video {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
 }
-
 /* Video responsivo */
 .tarjeta_video video {
   width: 100%;
@@ -185,7 +181,6 @@ color:orange;
 
 /* CONTACTO - Sección */
 .contact {
-  background-color: rgba(237, 221, 83, 1);
   padding: 4rem 1rem;
 }
 
@@ -273,4 +268,11 @@ footer {
   text-decoration: none;
 }
 
-
+@media (min-width: 1200px) {
+  .contenedorDeTarjetas article img {
+    max-width: 100%;
+    height: 450px;
+    object-fit: cover;
+    object-position: center;
+  }
+}
